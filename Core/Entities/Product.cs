@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace Core.Entities
 {
-    public class Product
+    public class Product : BaseEntity
     {
-        [Key]
-        public int Id { get; set; }
         [Required(ErrorMessage = "Please Enter Name")]
         [StringLength(50)]
         public string Name { get; set; }
